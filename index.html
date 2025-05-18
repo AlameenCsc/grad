@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduating Class Photo Album</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 1em;
+      background-color: #343a40;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h3 {
+      margin-bottom: 10px;
+      color: #343a40;
+    }
+    .card-body p {
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .search-box {
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Graduating Class of 2024 - Photo Album</h1>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search by name or matric number...">
+  </div>
+
+  <div class="gallery" id="gallery">
+    <div class="card">
+      <img src="jafar1.jpg" alt="Abdullahi Yusuf" />
+      <div class="card-body">
+        <h3>Abdullahi Yusuf</h3>
+        <p>Matric: SLU/CSC/19/1234</p>
+        <p>Department: Computer Science</p>
+        <p>Phone: 08123456789</p>
+        <p>Email: abdullahi@example.com</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="baby.jpg" alt="Maryam Aliyu" />
+      <div class="card-body">
+        <h3>Maryam Aliyu</h3>
+        <p>Matric: SLU/CSC/19/2345</p>
+        <p>Department: Computer Science</p>
+        <p>Phone: 08012345678</p>
+        <p>Email: maryam@example.com</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="engineer.png" alt="Usman magaji" />
+      <div class="card-body">
+        <h3>Usman magaji</h3>
+        <p>Matric: SLU/CSC/19/3456</p>
+        <p>Department: Computer Science</p>
+        <p>Phone: 09087654321</p>
+        <p>Email: usman@example.com</p>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="engineer2.jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>Usman Aliyu</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Eng</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: aliyu@example.com</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="jafar3.jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>japar magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (1).jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>habibu magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (10).jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>Fatima magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (11).jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>Zulaihat Ali magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (12).jpg" alt="Usman Haruna" />
+        <div class="card-body">
+          <h3>yakubu Haruna</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (13).jpg" alt="Usman Haruna" />
+        <div class="card-body">
+          <h3>kabiru Haruna</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (2).jpg" alt="Usman Haruna" />
+        <div class="card-body">
+          <h3>Habu Lawan</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="example (6).jpg" alt="Usman Haruna" />
+        <div class="card-body">
+          <h3>Saifullahi magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="jafar3.jpg" alt="Usman magaji" />
+        <div class="card-body">
+          <h3>jabiru magaji</h3>
+          <p>Matric: SLU/CSC/19/3456</p>
+          <p>Department: Computer Science</p>
+          <p>Phone: 09087654321</p>
+          <p>Email: usman@example.com</p>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", function () {
+      const query = searchInput.value.toLowerCase();
+
+      cards.forEach(card => {
+        const name = card.querySelector("h3").textContent.toLowerCase();
+        const matric = card.querySelector("p").textContent.toLowerCase();
+
+        if (name.includes(query) || matric.includes(query)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
